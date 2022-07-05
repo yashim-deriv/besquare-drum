@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drum App</title>
+    </head>
+    <body>
+        <nav>
+            <div class="branding">Drum App</div>
+            <div class="menu-buttons">
+                <button id="start_game">Start Game</button>
+                <button id="record">Record</button>
+                <button id="playback">Playback</button>
+                <button>Settings</button>
+            </div>
+        </nav>
+        <div class="main-container">
+            <div class="score container">
+                <div class="card score-card">
+                    <div class="score-header">Score</div>
+                    <div id="score">0</div>
+                </div>
+            </div>
+            <div id="targets" class="sequence container">
+                <div class="card sequence-card">A</div>
+                <div class="card sequence-card">A</div>
+                <div class="card sequence-card">A</div>
+                <div class="card sequence-card active">A</div>
+                <div class="card sequence-card">A</div>
+                <div class="card sequence-card">A</div>
+                <div class="card sequence-card">A</div>
+            </div>
+            <div id="controls" class="control container"></div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+/** Body **/
+body {
+    font-family: "Heebo", sans-serif;
+}
+
+/** Card **/
+.card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/** General Container **/
+.container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/** Main Container **/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    margin-top: 3.6rem;
+}
+
+/** Navigation Bar **/
+nav {
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 3.6rem;
+    background-color: black;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+nav > .branding {
+    color: white;
+    font-size: 1.4rem;
+}
+
+nav > .menu-buttons {
+    margin-left: auto;
+}
+
+nav > .menu-buttons > button {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    min-width: 120px;
+}
+
+nav > .menu-buttons > button:not(:last-child) {
+    margin-right: 12px;
+}
+
+/** Score Display **/
+.score.container {
+    margin-bottom: 6rem;
+}
+
+.card.score-card {
+    display: inline-flex;
+    border-radius: 8px;
+    font-size: 1.4rem;
+}
+
+.score-header {
+    background-color: black;
+    color: white;
+    border-radius: 8px 0 0 8px;
+    padding: 8px 10px;
+}
+
+#score {
+    margin: auto 0;
+    padding: 0 16px;
+}
+
+/** Key Sequence **/
+.sequence.container {
+    padding: 0 20px;
+    margin-bottom: 10rem;
+}
+
+.sequence-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 16px) / 5);
+    height: 10rem;
+    border-radius: 8px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.sequence-card.active {
+    height: 12rem;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.sequence-card:not(:last-child) {
+    margin-right: 16px;
+}
+
+/** Game Controls **/
+.control.container {
+    flex-wrap: wrap;
+}
+
+.control.card {
+    width: 180px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    transition: all 0.08s ease;
+}
+
+.control.card:not(:last-child) {
+    margin-right: 24px;
+}
+
+.control.card > .label {
+    background-color: black;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 16px 0;
+}
+
+.control.card > .key {
+    height: 80px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.playing {
+    box-shadow: 0 10px 15px -3px rgba(0, 229, 255, 0.5), 0 4px 6px -4px rgba(0, 229, 255, 0.5);
+    transform: scale(1.2);
+}
