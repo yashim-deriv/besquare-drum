@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Heebo" rel="stylesheet" />
+        <link href="./reset.css" rel="stylesheet" />
+        <link href="./main.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Drum App</title>
     </head>
@@ -16,10 +18,19 @@
                 <button id="start_game">Start Game</button>
                 <button id="record">Record</button>
                 <button id="playback">Playback</button>
-                <button>Settings</button>
+                <button id="settings">Settings</button>
             </div>
         </nav>
         <div class="main-container">
+            <div class="settings hidden">
+                <h1>Settings Page</h1>
+                <div class="error-message"></div>
+                <div class="settings-container"></div>
+                <div class="settings-controls">
+                    <button id="submit-settings">Submit</button>
+                    <button id="reset-settings">Reset</button>
+                </div>
+            </div>
             <div class="score container">
                 <div class="card score-card">
                     <div class="score-header">Score</div>
